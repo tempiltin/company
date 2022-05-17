@@ -6,7 +6,10 @@
   box-sizing: border-box;
 
 }
-
+html {
+  overflow: hidden;overflow-y: auto;scroll-behavior: smooth;
+}
+::-webkit-scrollbar{display: none;}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 :root {
   --color-primary: #059DFF;
@@ -32,7 +35,7 @@
   --color-black: #000000;
   --color-blacker: rgba(15, 15, 17, 0);
   --color-blackest: #0f0f11;
-  --color-border: hsla(0,0%,100%,0.1);
+  --color-border: rgba(255, 255, 255, 0.46);
   --color-lessdark: #1e1e1e;
   --color-gray: #65676B;
   --color-midgray: #878787;
@@ -111,7 +114,17 @@ nav {
     font-size: 12px;
     z-index: 99;
 }
+.bars-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+a{
+  .Bars-icon{
+    font-size: 45px;
+  }
+}
 ul {
   display: flex;
   justify-content: space-between;
@@ -135,9 +148,12 @@ a{
   transition: 0.3s;
 }
 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--font-size-b1);
   line-height: var(--line-height-b1);
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   color: var(--color-body);
   font-weight: 400;

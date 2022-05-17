@@ -3,9 +3,9 @@ import LOGO from '../../../assets/programmer.png'
 import { AiOutlineBars } from 'react-icons/ai'
 export default function Navbar() {
     const [navSize, setnavSize] = useState("80px");
-    const [navColor, setnavColor] = useState("transparent");
+    const [navColor, setnavColor] = useState("#152f39");
     const listenScrollEvent = () => {
-        window.scrollY > 10 ? setnavColor("#060606") : setnavColor("transparent");
+        window.scrollY > 10 ? setnavColor("#152f39") : setnavColor("#060606");
         window.scrollY > 10 ? setnavSize("5rem") : setnavSize("80px");
     };
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function Navbar() {
                                 <a href="#!"><img src={LOGO} alt={LOGO} /></a>
                             </li>
                         </div>
-                        <div className="col-auto">
+                        <div className="d-none d-lg-flex  col-lg-auto d-md-none">
                             <ul>
                                 <li><a href="#!">Home</a></li>
                                 <li><a href="#!">About</a></li>
@@ -35,10 +35,12 @@ export default function Navbar() {
                                 <li><a href="#!">Contact</a></li>
                             </ul>
                         </div>
-                        <div className="col-auto">
-                            <a href="#!">
-                                <AiOutlineBars />
-                            </a>
+                        <div className="col-auto d-md-flex d-lg-none">
+                            <li className="bars-logo">
+                                <a href="#!">
+                                    <AiOutlineBars className="Bars-icon" />
+                                </a>
+                            </li>
                         </div>
                     </div>
 
