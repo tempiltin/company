@@ -14,9 +14,28 @@ export default function Navbar() {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, []);
+    const [state, setState] = useState(false);
+
+    const Navclick = (e) => {
+      e.preventDefault();
+      if (state) {
+        setState(false);
+      } else {
+        setState(true);
+      }
+    };
+  
+    const NavButton = (e) => {
+      e.preventDefault();
+      if (state) {
+        setState(false);
+      } else {
+        setState(true);
+      }
+    };
 
     return (
-        <div>
+        <>
             <nav style={{ backgroundColor: navColor, height: navSize, transition: "all 1s" }}>
                 <div className="container">
                     <div className="row justify-content-between align-center">
@@ -38,7 +57,7 @@ export default function Navbar() {
                         <div className="col-auto d-md-flex d-lg-none">
                             <li className="bars-logo">
                                 <a href="#!">
-                                    <AiOutlineBars className="Bars-icon" />
+                                    <AiOutlineBars onClick={Navclick} className="Bars-icon" />
                                 </a>
                             </li>
                         </div>
@@ -46,6 +65,43 @@ export default function Navbar() {
 
                 </div>
             </nav>
-        </div>
+            
+            <div onClick={NavButton} className={state ? "navbarRight d-flex d-xl-none" : "navbarRightFalse"} >
+                <div className="opasty-width"></div>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-auto">
+                            <div className="NavButton ">
+                                <AiOutlineBars
+                                    onClick={NavButton}
+                                    className=" Bars-icon"
+                                />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="row justify-content-around">
+                        <div className="col-11 scrol-Y">
+                            <ul className=" Close-ul">
+                                <li><a href="#!">Home</a></li>
+                                <li><a href="#!">About</a></li>
+                                <li><a href="#!">Elements</a></li>
+                                <li><a href="#!">Blog</a></li>
+                                <li><a href="#!">Portfolio</a></li>
+                                <li><a href="#!">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="row justify-content-around">
+                        <div className="col-11 ">
+                            <div className="footer_">
+                                <a className="text-reset fw-bold footer-cp" href="https://www.tempiltin.uz/">Shukurov Temurbek</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
     );
 }
