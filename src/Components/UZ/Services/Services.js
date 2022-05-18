@@ -1,5 +1,7 @@
 import React from 'react'
 import {RiPulseLine} from 'react-icons/ri'
+import {FaChromecast} from 'react-icons/fa'
+import {BiMapAlt} from 'react-icons/bi'
 const Services = () => {
     return (
         <>
@@ -22,7 +24,7 @@ const Services = () => {
                     <div className="row mt-5 mb-5">
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="cicon">
-                            <RiPulseLine className='Puls'/>
+                            <RiPulseLine className='Puls color_1'/>
                             </div>
                             <div className="content">
                                 <h4>Awarded Design</h4>
@@ -31,7 +33,7 @@ const Services = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="cicon">
-                            <RiPulseLine className='Puls'/>
+                            <FaChromecast className='Puls color_2'/>
                             </div>
                             <div className="content">
                                 <h4>Design & Creative</h4>
@@ -40,7 +42,7 @@ const Services = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="cicon">
-                            <RiPulseLine className='Puls'/>
+                            <BiMapAlt className='Puls color_3'/>
                             </div>
                             <div className="content">
                                 <h4>App Development</h4>
