@@ -41,7 +41,7 @@ export default function Navbar() {
                     <div className="row justify-content-between align-center">
                         <div className="col-auto">
                             <li>
-                                <a href="#!"><img src={LOGO} alt={LOGO} /></a>
+                                <a href="#!"><img src={LOGO} alt={LOGO} /><strong>rogrammers UZ</strong></a>
                             </li>
                         </div>
                         <div className="d-none d-lg-flex  col-lg-auto d-md-none">
