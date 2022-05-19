@@ -914,3 +914,63 @@ background: transparent;
   }
 }
 
+footer{
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  
+.more {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #059DFF;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 20px;
+    transition: 500ms;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+  .rn-footer-widget{
+   .title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.inner {
+  margin-top: 13px;
+  .footer-link {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: start !important;
+    text-align: start !important;
+    padding: 0 !important;
+    li {
+
+      margin: 5px 0 !important;
+      padding: 0 !important;
+      a{
+        width: auto !important;
+        height: auto !important;
+        line-height: 1 !important;
+        text-align: start;
+        padding: 0 !important;
+      }
+  }
+  }
+}
+
+}
+    
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import CompTeam from './Components/UZ/CompaniesTeam/CompTeam'
 import DataFilter from './Components/UZ/DataFilterportfolio/DataFilter'
+import Footer from './Components/UZ/Footer/Footer'
 import Header from './Components/UZ/Header/Header'
 import Navbar from './Components/UZ/Navbar/Navbar'
 import PartinerCom from './Components/UZ/PartinerCompany/PartinerCom'
@@ -19,6 +20,7 @@ const App = () => {
       <DataFilter />
       <CompTeam />
       <PartinerCom />
+      <Footer />
 
     </>
   )
