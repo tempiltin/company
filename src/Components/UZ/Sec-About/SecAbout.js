@@ -5,8 +5,8 @@ const SecAbout = () => {
         <>
             <section className="SectionAbout">
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-6 pp">
+                    <div className="row mt-5 pt-5">
+                        <div className="col-lg-6  pp">
                             <div className="thumbnail  image-left-content">
                                 <img src={imp} alt={imp} />
                             </div>
@@ -16,7 +16,7 @@ const SecAbout = () => {
                                 <div className="col-lg-11">
                                     <div className="split-inner">
                                         <h4 className="title">What is DOOB?</h4>
-                                        <p>Randomised words which don't look even slightly believable. If you are to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. in some form, by injectedeed bedhumour, or randomised even.</p>
+                                        <h6>Randomised words which don't look even slightly believable. If you are to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. in some form, by injectedeed bedhumour, or randomised even.</h6>
                                         <ul className="split-list">
                                             <li>- Doug DeMarco, Design Prototyping Manager</li>
                                             <li>- 108 million paying subscribers</li>

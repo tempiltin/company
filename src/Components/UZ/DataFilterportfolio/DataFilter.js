@@ -123,7 +123,7 @@ but the majority have suffered alteration.</p>
 
        <div className="row"  >
         {filteredList.map((item, index) => (
-         <div className="col-lg-6 col-md-6 col-sm-6" key={index}>
+         <div className="col-lg-4 col-md-4 col-sm-6" key={index}>
             <div className="car-item" key={index}>
             <img className="car-image" src={item.url} alt="car-img" />
             <h5 key={index} >

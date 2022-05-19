@@ -532,6 +532,7 @@ div.btn-default:hover {
 
 .ptitle {
   margin-top: 95px;
+  line-height: 25px;
 }
 
 .more {
@@ -755,8 +756,8 @@ p{
 margin-bottom: 25px;
   background-color: transparent;
   img{
-    width: 629px;
-    height: 470px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
   }
   a {
@@ -918,7 +919,7 @@ footer{
   width: 100%;
   height: auto;
   padding-top: 100px;
-  
+  border-top: 2px solid var(--color-border);
 .more {
   position: relative;
 
@@ -972,5 +973,55 @@ footer{
 }
 
 }
-    
+    .urll{
+      display: flex;
+      justify-content: space-around;
+    }
+}
+.footerBottom{
+  border-top: 2px solid var(--color-border);
+  width: 100%;
+  padding-top: 25px;
+  padding-top: 20px;
+}
+// Media ///////////////////////////////////////////
+
+@media (max-width:1400px) {
+  .display-one {
+    font-size: 60px;
+}
+.split-inner {
+  padding: 38px 0px;
+}
+}
+@media (max-width:1199px) {
+  .Services p {
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.title_h3 {
+  font-size: 29px;
+  font-weight: 700;
+}
+.title {
+  font-family: var(--font-primary);
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 46px;
+  font-weight: 700;
+}
+main .card .cardTitle h5 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+.parentCompany h6 {
+  font-size: 29px;
+  color: white;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
 }

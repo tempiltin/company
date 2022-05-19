@@ -14,9 +14,9 @@ const Section1 = () => {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <p className="ptitle">
+                    <h6 className="ptitle">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Ullam accusantium dignissimos repellendus nemo fugiat numquam, nisi odio adipisci. Veniam neque itaque expedita officiis rem ipsa! Ratione, rem reiciendis?
-                    </p>
+                    </h6>
                     <div className="readmore-btn">
                         <a href="#!" className="more">view More</a>
                     </div>

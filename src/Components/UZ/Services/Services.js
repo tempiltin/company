@@ -22,7 +22,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="row mt-5 mb-5">
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="cicon">
                             <RiPulseLine className='Puls color_1'/>
                             </div>
@@ -31,7 +31,7 @@ const Services = () => {
                                 <p>There are many variations variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="cicon">
                             <FaChromecast className='Puls color_2'/>
                             </div>
@@ -40,7 +40,7 @@ const Services = () => {
                                 <p>Passages there are many variations variations of of Lorem Ipsum available, but the majority have suffered.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="cicon">
                             <BiMapAlt className='Puls color_3'/>
                             </div>
