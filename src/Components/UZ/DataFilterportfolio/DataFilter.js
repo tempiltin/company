@@ -1,36 +1,39 @@
 import { useEffect, useState } from "react";
-
+import IMG from '../../../assets/portfolio-01.jpg'
 
 export default function DataFilter() {
   // Array of all car objects
   const carList = [
     {
       name: "BMW M6",
-      url:
-        "https://mediapool.bmwgroup.com/cache/P9/201411/P90169551/P90169551-the-new-bmw-m6-coup-exterior-12-2014-600px.jpg",
-      release_year: 2020
-    },
-    {
-      name: "VW Polo",
-      url:
-        "https://cdn.euroncap.com/media/30740/volkswagen-polo-359-235.jpg?mode=crop&width=359&height=235",
+      url:IMG,
+        
       release_year: 2018
     },
     {
-      name: "Audi S6",
-      url:
-        "https://www.motortrend.com/uploads/sites/5/2020/03/6-2020-audi-s6.jpg?fit=around%7C875:492.1875",
-      release_year: 2020
-    },
-    {
-      name: "BMW M2",
-      url:
-        "https://imgd.aeplcdn.com/0x0/cw/ec/37092/BMW-M2-Exterior-141054.jpg?wm=0",
+      name: "BMW M6",
+      url:IMG,
+        
       release_year: 2019
     },
     {
+      name: "VW Polo",
+      url:IMG,
+      release_year: 2020
+    },
+    {
+      name: "Audi S6",
+      url:IMG,
+      release_year: 2021
+    },
+    {
+      name: "BMW M2",
+      url:IMG,
+      release_year: 2022
+    },
+    {
       name: "Audi A3",
-      url: "https://cdn.motor1.com/images/mgl/BEooZ/s3/2021-audi-s3.jpg",
+      url:IMG,
       release_year: 2019
     }
   ];
@@ -87,51 +90,52 @@ export default function DataFilter() {
   }, [selectedBrand, selectedYear]);
 
   return (
-    <div className="App">
-      <div className="brand-filter">
-        <div>Filter by Brand :</div>
-        <select
-          id="brand-input"
-          value={selectedBrand}
-          onChange={handleBrandChange}
-        >
-          <option value="">All</option>
-          <option value="BMW">BMW</option>
-          <option value="VW">VW</option>
-          <option value="Audi">Audi</option>
-        </select>
+    <section className="App ">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="section-title">
+              <h4 className="subtitle">
+                <span className="theme-gradient">Portfolio Default</span>
+              </h4>
+              <h2 className="title  ">Why People Choose Us!</h2>
+              <p className="description  b1">There are many variations of passages of Lorem Ipsum available,
+but the majority have suffered alteration.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>Filter by Year</div>
-      <div id="year-options" onClick={handleYearChange}>
-        <div
-          className={selectedYear === 2018 ? "active-option" : "filter-option"}
-          id="2018"
-        >
-          2018
-        </div>
-        <div
-          className={selectedYear === 2019 ? "active-option" : "filter-option"}
-          id="2019"
-        >
-          2019
-        </div>
-        <div
-          className={selectedYear === 2020 ? "active-option" : "filter-option"}
-          id="2020"
-        >
-          2020
+      <div className="container">
+        <div className="row justify-content-center">
+        <div className="col-auto" id="year-options" onClick={handleYearChange}>
+        <div  className={selectedYear === 2018 ? "active-option" : "filter-option"} id="2018"> All</div>
+        <div className={selectedYear === 2019 ? "active-option" : "filter-option"} id="2019" > Telegram Bot </div>
+         <div  className={selectedYear === 2020 ? "active-option" : "filter-option"} id="2020"> CRM </div>
+         <div  className={selectedYear === 2021 ? "active-option" : "filter-option"} id="2021"> content </div>
+         <div  className={selectedYear === 2022 ? "active-option" : "filter-option"} id="2022"> Website </div>
+      </div>
         </div>
       </div>
 
-      <div id="car-list">
+
+     <div className="container">
+      
+
+       <div className="row"  >
         {filteredList.map((item, index) => (
-          <div className="car-item" key={index}>
-            <div className="car-name">{`Name: ${item.name}`}</div>
-            <div className="car-year">{`Year: ${item.release_year}`}</div>
+         <div className="col-lg-6 col-md-6 col-sm-6" key={index}>
+            <div className="car-item" key={index}>
             <img className="car-image" src={item.url} alt="car-img" />
+            <h5 key={index} >
+            <a href="#!" className="car-name">{`Name: ${item.name}`}</a>
+            </h5>
+            <div className="car-year">{`Year: ${item.release_year}`}</div>
           </div>
+         </div>
         ))}
-      </div>
-    </div>
+   
+       </div>
+     </div>
+    </section>
   );
 }

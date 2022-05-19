@@ -693,14 +693,46 @@ div.btn-default:hover {
     font-size: 18px;
   }
 }
-
+h2{
+  font-size: 46px;
+  display: block !important;
+  justify-content: center !important;
+  text-align: center;
+  margin: auto;
+}
+p{
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding-top: 100px;
+  
   font-size: 20px;
+  h2{
+    font-size: 46px;
+    display: block !important;
+    justify-content: center !important;
+    text-align: center;
+    margin: auto;
+  }
+  .title {
+    font-family: var(--font-primary);
+    margin-bottom: 25px;
+    display: block;
+    font-weight: 700;
+}
+p{
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
 }
 #year-options {
   display: flex;
@@ -718,19 +750,34 @@ div.btn-default:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 .car-item {
-  display: flex;
-  height: 200px;
-  flex-direction: column;
-  background-color: #fafafa;
-  border: 1px solid black;
-  padding: 10px;
-  gap: 5px;
+  width: 100%;
+  height: auto;
+margin-bottom: 25px;
+  background-color: transparent;
+  img{
+    width: 629px;
+    height: 470px;
+    border-radius: 10px;
+  }
+  a {
+    color: var(--color-body);
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 17px;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    transition: 0.3s;
+}
+.car-year{
+  padding-left: 15px;
+}
 }
 .filter-option,
 .active-option {
   padding: 10px 20px;
   min-width: 50px;
-  border-radius: 2rem;
+  border-radius: 10px;
 }
 .brand-filter {
   display: flex;
@@ -743,10 +790,105 @@ div.btn-default:hover {
 }
 .filter-option:hover,
 .active-option {
-  background-color: #48b393;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white) !important;
   cursor: pointer;
   display: flex;
   justify-content: center;
   transition: all 0.1s;
+}
+#year-options{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+main{
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  .card{
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: 1000ms;
+    background-color: transparent;
+    cursor: pointer;
+    .imgDiv{
+      border-radius: 10px;
+      overflow: hidden;
+
+      img{
+        width: 100%;
+      }
+    }
+   
+    .cardTitle{
+      cursor: pointer;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      border-radius: 10px;
+      background: #000000c0;
+      display: flex;
+     flex-direction: column;
+     justify-content: end;
+     transition: 500ms;
+     transform: scale(0);
+     h5{
+       font-size: 22px;
+       color: white;
+       font-weight: 500;
+
+     }
+     a {
+      color: var(--color-body);
+      font-size: 16px;
+      font-weight: 500;
+      /* padding: 0 17px; */
+      /* display: block; */
+      height: 0;
+       line-height: 0; 
+      transition: 0.3s;
+  }
+    }
+    &:hover{
+      .cardTitle{
+        transform: scale(1);
+      }
+    }
+  }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+background: transparent;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
 }
