@@ -18,7 +18,23 @@ html {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-
+.navbarRight , .navbarRightFalse{
+  background: #417b87 !important;
+  background: linear-gradient(29deg, #417b87 0%, black 27%, #040317 73%, #020024 100%) !important;
+  color: white;
+  ul{
+   
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+  
+  }
+  .footer_{
+    display: flex;
+    justify-content: center;
+  }
+}
 :root {
   --color-primary: #059DFF;
   --color-primary-rgba: rgb(5, 157, 255);
@@ -1149,6 +1165,17 @@ p {
 }
 }
 @media (max-width:575px){
+  .navbarRight {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color-2);
+    transition: 600ms;
+    border-left: 1px solid #3b4046;
+}
   .frame-image {
     padding: 9px;
     right: 0;
@@ -1284,5 +1311,18 @@ footer {
   height: auto;
   padding-top: 50px;
   border-top: 2px solid var(--color-border);
+}
+.bars-logo{
+  padding-top: 18px;
+}
+.navbarRight .opasty-width {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #f32222;
+  z-index: 99999998;
+  top: 0;
+  left: -100%;
+  transition: 500ms;
 }
 }

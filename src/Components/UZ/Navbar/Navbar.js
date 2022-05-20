@@ -95,7 +95,7 @@ export default function Navbar() {
                     <div className="row justify-content-around">
                         <div className="col-11 ">
                             <div className="footer_">
-                                <a className="text-reset fw-bold footer-cp" href="https://www.tempiltin.uz/">Shukurov Temurbek</a>
+                                <a className="text-reset fw-bold footer-cp" href="https://www.programmers.uz/">Programmers UZ</a>
                             </div>
                         </div>
                     </div>
