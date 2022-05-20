@@ -1023,5 +1023,266 @@ main .card .cardTitle h5 {
   width: 60%;
   margin: auto;
   text-align: center;
+} 
+
+.more {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #059DFF;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 20px;
+    transition: 500ms;
+  }
+
+  &:hover:after {
+    width: 25%;
+  }
+}
+
+}
+@media (max-width:991px) {
+  .subtitle {
+    font-weight: 600;
+    width: auto;
+    letter-spacing: .5px;
+    line-height: 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: block;
+    padding: 7px 14px;
+    box-shadow: var(--shadow-lighter);
+    text-align: center;
+    margin-top: 30px;
+}
+header{
+  max-height: 980px !important;
+}
+.Services p {
+  font-size: 13px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.split-inner{
+  h6{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  h4.title{
+    display: block;
+    text-align: center;
+  }
+}
+a.btn-default{
+  display: block;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+.car-item a {
+  color: var(--color-body);
+  font-size: 23px;
+  font-weight: 600;
+  padding: 0px 16px;
+  display: block;
+  height: 50px;
+  line-height: 72px;
+  transition: 0.3s;
+}
+}
+@media (max-width:767px){
+  a.btn-default.btn-medium, button.btn-default.btn-medium, div.btn-default.btn-medium {
+    height: 65px;
+    width: 260px;
+    line-height: 61px;
+    padding: 0 40px;
+}
+.content{
+  margin-bottom: 40px;
+}
+a.btn-default {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.App h2 {
+  font-size: 30px;
+  display: block !important;
+  justify-content: center !important;
+  text-align: center;
+  margin: auto;
+}
+.App p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.filter-option{
+  font-size: 16px;
+}
+.filter-option, .active-option {
+  padding: 4px 7px;
+  min-width: 50px;
+  border-radius: 10px;
+}
+p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.parentCompany h6 {
+  font-size: 23px;
+  color: white;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+}
+@media (max-width:575px){
+  .frame-image {
+    padding: 9px;
+    right: 0;
+    border-radius: 10px;
+    height: 100%;
+    background: #417b87;
+    background: linear-gradient(29deg, #417b87 18%, black 63%, #040317 73%, #020024 100%);
+    cursor: pointer;
+    margin-top: 61px;
+}
+.title_h3 {
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center !important;
+}
+.title {
+  font-family: var(--font-primary);
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+}
+.list-icon li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0px 0;
+}
+.title_h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center !important;
+}
+#section1 {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.ptitle {
+  margin-top: 0px;
+  line-height: 25px;
+  text-align: justify;
+}
+.Services h2 {
+  text-align: center;
+  color: #ffff;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.Services p {
+  font-size: 13px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.split-inner h6 {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+}
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  margin-top: 3px;
+  margin-bottom: -5px;
+  color: var(--color-body);
+  font-weight: 400;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  font-size: 20px;
+}
+.App h2 {
+  font-size: 18px;
+  display: block !important;
+  justify-content: center !important;
+  text-align: center;
+  margin: auto;
+}
+.filter-option, .active-option {
+  padding: 4px 1px;
+  min-width: 17px;
+  border-radius: 10px;
+}
+.filter-option, .active-option {
+  padding: 4px 5px;
+  min-width: 17px;
+  border-radius: 10px;
+  font-size: 13px !important;
+
+}
+#year-options{
+  display: flex;
+  flex-wrap: wrap;
+}
+.car-item a {
+  color: var(--color-body);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 15px;
+  display: block;
+  height: 26px;
+  line-height: 49px;
+  transition: 0.3s;
+}
+main {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  background: transparent;
+}
+.parentCompany {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 100px;
+}
+.parentCompany h6 {
+  font-size: 19px;
+  color: white;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  border-top: 2px solid var(--color-border);
 }
 }
